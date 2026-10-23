@@ -1,0 +1,39 @@
+{
+  "seed": 42,
+  "features": [
+    "LOG_AMOUNT",
+    "AMOUNT_RATIO",
+    "PRIOR_COUNT_1H",
+    "LOG_GAP_SECONDS",
+    "NIGHT_FLAG"
+  ],
+  "default_policy": "Q98",
+  "thresholds": {
+    "Q90": 0.6226785851679351,
+    "Q95": 0.6882664795494937,
+    "Q98": 0.7187424258056473,
+    "Q99": 0.7282028927326838
+  },
+  "model_parameters": {
+    "bootstrap": false,
+    "contamination": "auto",
+    "max_features": 1.0,
+    "max_samples": 256,
+    "n_estimators": 200,
+    "n_jobs": 1,
+    "random_state": 42,
+    "verbose": 0,
+    "warm_start": false
+  },
+  "test_average_precision_synthetic": 0.889216329879355,
+  "versions": {
+    "python": "3.12.10",
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "scikit_learn": "1.8.0"
+  },
+  "training": "2025-01-01 through 2025-03-31",
+  "validation": "2025-04-01 through 2025-04-30",
+  "test": "2025-05-01 through 2025-06-29",
+  "score_definition": "negative IsolationForest.score_samples; NOT probability"
+}

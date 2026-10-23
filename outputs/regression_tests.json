@@ -1,0 +1,17 @@
+{
+  "passed": 12,
+  "tests": [
+    "duplicate transaction detected",
+    "orphan account detected",
+    "invalid timestamp detected",
+    "negative amount detected",
+    "missing merchant category detected",
+    "future events do not alter prior features",
+    "current amount excluded from own historical features",
+    "strict past per-account features and hour boundary verified",
+    "labels excluded from model and deployed risk file",
+    "thresholds reproduced from validation and frozen flags verified",
+    "threshold monotonicity and confusion matrix identities",
+    "multiple review events do not duplicate transaction amounts"
+  ]
+}

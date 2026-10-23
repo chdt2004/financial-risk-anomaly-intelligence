@@ -1,0 +1,5 @@
+{
+  "passed": true,
+  "csv_files_checked": 10,
+  "method": "Rerun with unchanged seed and inputs; byte-identical CSV outputs."
+}

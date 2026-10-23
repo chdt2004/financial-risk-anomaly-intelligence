@@ -1,0 +1,121 @@
+[
+  {
+    "table": "ACCOUNTS",
+    "file": "data/raw/ACCOUNTS.csv",
+    "row_count": 200,
+    "columns": [
+      "ACCOUNT_ID",
+      "ACCOUNT_TYPE",
+      "OPEN_DATE"
+    ]
+  },
+  {
+    "table": "MERCHANTS",
+    "file": "data/raw/MERCHANTS.csv",
+    "row_count": 40,
+    "columns": [
+      "MERCHANT_ID",
+      "MERCHANT_CATEGORY",
+      "MERCHANT_REGION"
+    ]
+  },
+  {
+    "table": "TRANSACTION_TYPES",
+    "file": "data/raw/TRANSACTION_TYPES.csv",
+    "row_count": 1,
+    "columns": [
+      "TYPE_ID",
+      "TYPE_NAME"
+    ]
+  },
+  {
+    "table": "DATES",
+    "file": "data/raw/DATES.csv",
+    "row_count": 180,
+    "columns": [
+      "TX_DATE",
+      "YEAR",
+      "MONTH_NUMBER"
+    ]
+  },
+  {
+    "table": "REVIEWS",
+    "file": "data/raw/REVIEWS.csv",
+    "row_count": 430,
+    "columns": [
+      "REVIEW_ID",
+      "TRANSACTION_ID",
+      "REVIEW_TIMESTAMP",
+      "REVIEW_STATUS"
+    ]
+  },
+  {
+    "table": "TRANSACTION_RISK",
+    "file": "data/processed/TRANSACTION_RISK.csv",
+    "row_count": 21470,
+    "columns": [
+      "TRANSACTION_ID",
+      "ACCOUNT_ID",
+      "MERCHANT_ID",
+      "TX_TIMESTAMP",
+      "AMOUNT_GBP",
+      "TYPE_ID",
+      "CURRENCY",
+      "PRIOR_COUNT_1H",
+      "GAP_SECONDS",
+      "PRIOR_MEAN_GBP",
+      "PRIOR_HISTORY_COUNT",
+      "LOG_AMOUNT",
+      "AMOUNT_RATIO",
+      "LOG_GAP_SECONDS",
+      "NIGHT_FLAG",
+      "TX_DATE",
+      "SPLIT",
+      "ANOMALY_SCORE",
+      "ALERT_FLAG",
+      "TX_COUNT",
+      "ALERT_AMOUNT_GBP",
+      "RISK_BAND",
+      "SCORE_BIN",
+      "INDICATOR_AMOUNT",
+      "INDICATOR_VELOCITY",
+      "INDICATOR_SHORT_GAP",
+      "INDICATOR_NIGHT",
+      "REVIEW_HINT"
+    ]
+  },
+  {
+    "table": "THRESHOLD_METRICS",
+    "file": "data/processed/THRESHOLD_METRICS.csv",
+    "row_count": 8,
+    "columns": [
+      "SPLIT",
+      "POLICY_ID",
+      "THRESHOLD",
+      "TRANSACTION_COUNT",
+      "ALERT_COUNT",
+      "ALERT_VALUE_GBP",
+      "TP",
+      "FP",
+      "FN",
+      "TN",
+      "PRECISION",
+      "RECALL",
+      "ALERT_RATE"
+    ]
+  },
+  {
+    "table": "TRANSACTIONS",
+    "file": "data/raw/TRANSACTIONS.csv",
+    "row_count": 21470,
+    "columns": [
+      "TRANSACTION_ID",
+      "ACCOUNT_ID",
+      "MERCHANT_ID",
+      "TX_TIMESTAMP",
+      "AMOUNT_GBP",
+      "TYPE_ID",
+      "CURRENCY"
+    ]
+  }
+]
